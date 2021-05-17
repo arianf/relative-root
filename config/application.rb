@@ -31,5 +31,6 @@ module RelativeRoot
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    default_url_options[:host] = 'localhost'
   end
 end

@@ -2,5 +2,9 @@
 
 require_relative "config/environment"
 
-run Rails.application
+# without this nothing works... lol
+map RelativeRoot::Application.config.relative_url_root || '/' do
+  run Rails.application
+end
+
 Rails.application.load_server

@@ -1,0 +1,9 @@
+<h1>Proof</h1>
+
+<pre>
+ENV["RAILS_RELATIVE_URL_ROOT"]: <%= ENV["RAILS_RELATIVE_URL_ROOT"].inspect %>
+RelativeRoot::Application.config.relative_url_root: <%= RelativeRoot::Application.config.relative_url_root.inspect %>
+RelativeRoot::Application.config.action_controller.relative_url_root: <%= RelativeRoot::Application.config.action_controller.relative_url_root.inspect %>
+RelativeRoot::Application.routes.url_helpers.test_index_url: <%= RelativeRoot::Application.routes.url_helpers.test_index_url.inspect %>
+RelativeRoot::Application.routes.url_helpers.test_index_path: <%= RelativeRoot::Application.routes.url_helpers.test_index_path.inspect %>
+</pre>
